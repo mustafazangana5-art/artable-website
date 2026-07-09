@@ -273,11 +273,15 @@
   }
   .giant{
     font-weight:900;text-transform:uppercase;text-align:center;
-    font-size:clamp(90px,19.5vw,300px);line-height:.78;letter-spacing:-.02em;
-    background:linear-gradient(to bottom, rgba(var(--glow1),.9), rgba(var(--glow1),.06));
+    font-size:clamp(74px,17.5vw,270px);line-height:.9;letter-spacing:-.02em;
+    background:linear-gradient(to bottom, rgba(var(--glow1),.95), rgba(var(--glow1),.25));
     -webkit-background-clip:text;background-clip:text;color:transparent;
-    transform:translateY(14%);
     user-select:none;
+    padding:0 10px 4vh;
+  }
+  .foot-base{
+    height:5px;background:var(--grad);
+    box-shadow:0 -4px 30px rgba(var(--glow1),.45);
   }
 
 
@@ -324,7 +328,7 @@
     -webkit-background-clip:text;background-clip:text;
   }
   .giant.lit{
-    background:linear-gradient(100deg, rgba(var(--glow1),.95) 20%, #FFF3D6 40%, rgba(var(--glow1),.85) 60%, rgba(var(--glow1),.08) 95%);
+    background:linear-gradient(100deg, var(--c1) 25%, #FFF3D6 45%, var(--c2) 65%, var(--c1) 85%);
     background-size:200% 100%;
     -webkit-background-clip:text;background-clip:text;
     animation:shimmer 6s linear infinite;
@@ -508,6 +512,7 @@
     <span>© 2026</span>
   </div>
   <div class="giant">Artable</div>
+  <div class="foot-base"></div>
 </footer>
 
 <script>
